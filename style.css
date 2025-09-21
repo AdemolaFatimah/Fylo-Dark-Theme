@@ -1,24 +1,60 @@
-*{
-   margin: 0; 
-   padding: 0;
-   box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header{
-    background-color: hsl(217, 28%, 15%) ;
-    color: white;
+body {
+  background-color: hsl(219, 30%, 18%);
+  height: 100vh;
+  color: #fff;
+  width: 100%;
+  background-image: url(Asset/images/bg-curvy-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+.Features-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.features {
+  padding: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.features h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 800;
+  font-style: bold;
+}
+
+.features p {
+  font-size: 20px;
+  width: 70%;
+  font-family: "Times New Roman", Times, serif;
+  /* font-weight: 400 */
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+  .Features-section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-}
-.navbar ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-.navbar li{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    
+    flex-direction: column;
+  }
+  .features p {
+    font-size: 20px;
+    width: 150%;
+  }
 }
